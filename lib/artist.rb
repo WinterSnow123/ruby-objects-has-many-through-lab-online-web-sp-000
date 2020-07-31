@@ -14,10 +14,7 @@ end
   end
 
   def new_song(name,genre)
-    new_song = Song.new(name)
-    new_song.artist = self
-    new_song.genre = genre
-    new_song
+    new_song = Song.new(name,self,genre)
   end
 
   def songs
