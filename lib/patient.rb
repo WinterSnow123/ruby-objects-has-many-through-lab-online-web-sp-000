@@ -24,5 +24,5 @@ attr_accessor :name
   def doctors
     self.appointments.collect{|appointment| appointment.doctor}
   end
-  
+
 end
